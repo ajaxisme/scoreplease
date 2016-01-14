@@ -1,38 +1,7 @@
 body{
-	background-color: #000000;
+	background-color: #3e6989;
 }
 
-.white-text{
-	color: #ffffff;
-}
-.header{
-	background-color: #dd4455;
-	color: #ffffff;
-}
-
-.footer{
-	background-color: #142a13;
-	color: #ffffff;
-}
-
-.search_section{
-	width: 400px;
-	height: 400px;
-	overflow: auto;
-}
-.search_list{
-	padding: 10px;
-	overflow: auto;
-	width: 100%;
-	height: 100%;
-}
-
-.search-item{
-	padding: 2px;
-	background-color: #ffffff;
-}
-
-.playlist{
-	width:800px;
-	height:200px;
+.right-space{
+	padding-right: 5px;
 }

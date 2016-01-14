@@ -1,16 +1,16 @@
 var scorepleaseApp = angular.module('scorepleaseApp', ['ngResource']);
 
-iamwatchingApp.controller('videoCtrl', function ($scope, $resource){
+scorepleaseApp.controller('spCtrl', function ($scope, $resource){
   
   $scope.searchAndDisplay = function(){
-    $scope.query = $resource('http://localhost:5000/vid/api/v1.0/vsearch',
-        {q: $scope.searchTerm, callback: 'JSON_CALLBACK'},{get: {method: 'JSONP'}});
+    $scope.query = $resource('http://api.football-api.com/2.0/competitions/:id',
+        {id: '1204', Authorization:'secret_key', callback:'JSON_CALLBACK'},{get: {method: 'JSONP'}});
 
     var results = $scope.query.get();
     if(results.error)
       alert("error");
     else{
-      $scope.vids = results;
+      $scope.comp = results;
     }
   };
     

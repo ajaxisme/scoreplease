@@ -22,11 +22,20 @@
     <![endif]-->
 </head>
 
-<body>
+<body ng-controller="spCtrl">
   <!-- header begins -->
+  <div class="container">
+    <h1 class="page-header"> <i class="glyphicon glyphicon-sunglasses right-space"></i>scoreplease </h1>
+  </div>
   <!-- header ends -->
 
   <!-- main body begins -->
+  <button class="btn btn-primary" ng-click="searchAndDisplay();">Premier League </button>
+  <div class="container main-body">
+    <h1> {{comp.name}} <h1>
+    <br><br>
+    <h2> {{comp.region}} <h2>
+  </div>
   <!-- main body ends -->
 
   <!-- footer begins -->
